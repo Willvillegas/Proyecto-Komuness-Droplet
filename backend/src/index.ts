@@ -28,9 +28,9 @@ app.use(cors(
 ));
 
 //routes
-app.use('/usuario', usuarioRoutes);
-app.use('/publicaciones', publicacionRoutes);
-app.use('/biblioteca', bibliotecaRoutes);
+app.use('/api/usuario', usuarioRoutes);
+app.use('/api/publicaciones', publicacionRoutes);
+app.use('/api/biblioteca', bibliotecaRoutes);
 
 app.get('/', (req: Request, res: Response) => {
     res.send('Hello World');
